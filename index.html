@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FBF4E4">
+  <title>Survival Island</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main>
+    <section id="start-screen" class="start-screen">
+      <h1>SURVIVAL<br>ISLAND</h1>
+      <div class="group-control">
+        <label for="group-count">GROUPS</label>
+        <select id="group-count" aria-label="Number of groups">
+          <option>1</option><option>2</option><option>3</option><option>4</option>
+          <option>5</option><option>6</option><option>7</option><option selected>8</option>
+        </select>
+      </div>
+      <button id="start" class="primary">START</button>
+      <button id="continue" class="text-button" hidden>CONTINUE ACTIVITY</button>
+    </section>
+    <section id="groups-screen" class="groups-screen" hidden aria-label="Group selections">
+      <header class="activity-header">
+        <span>SURVIVAL ISLAND</span>
+        <button id="back" class="text-button">START SCREEN</button>
+      </header>
+      <div id="group-table" class="group-table"></div>
+    </section>
+    <p id="storage-status" role="status" hidden>Browser saving is unavailable. Keep this page open to retain the activity.</p>
+  </main>
+  <dialog id="item-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-header">
+      <h2 id="dialog-title"></h2>
+      <button id="close-dialog" class="close-button" aria-label="Close without saving">×</button>
+    </div>
+    <div id="item-grid" class="item-grid"></div>
+    <div class="dialog-footer">
+      <span id="selection-count" role="status" aria-live="polite"></span>
+      <button id="confirm" class="primary">CONFIRM</button>
+    </div>
+  </dialog>
+</body>
+</html>
