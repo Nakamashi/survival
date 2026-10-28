@@ -2,7 +2,7 @@
 
 const ITEMS = [
   { id: 'fishing', name: 'Fishing rod', file: 'rod.jpeg' },
-  { id: 'matches', name: 'Matches (100)', file: 'matches.jpeg' },
+  { id: 'matches', name: 'Matches (10)', file: 'matches.jpeg' },
   { id: 'rope', name: 'Rope (20 metres)', file: 'rope.jpeg' },
   { id: 'pot', name: 'Cooking pot', file: 'pot.jpeg' },
   { id: 'aid', name: 'First aid kit', file: 'first aid.jpeg' },
